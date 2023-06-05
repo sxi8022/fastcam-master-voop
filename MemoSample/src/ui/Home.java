@@ -118,7 +118,6 @@ public class Home {
 
     // 메모 작성하기 (구현)
     public Memo writeMemo() {
-        sc = new Scanner(System.in); //이렇게 해야 입력이됨
         // (1) 글 번호 불러오기
         int maxMemoNo = memoList.getCount() + 1;
         // (2) 이름 입력
@@ -157,7 +156,6 @@ public class Home {
     // 비밀번호 체크
     public Boolean passwordCheck(int choice) {
         boolean check = true;
-        sc = new Scanner(System.in); //이렇게 해야 입력이됨
         // 비밀번호 입력
         System.out.println("비밀번호를 입력해주세요.");
         String password = sc.nextLine();
