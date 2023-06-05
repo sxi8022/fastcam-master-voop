@@ -107,6 +107,7 @@ public class Home {
 
         try {
             selectNum = sc.nextInt();
+            sc.nextLine();
         } catch(InputMismatchException e) {
             System.out.println("올바른 숫자를 입력해주세요.");
             System.exit(-1);
@@ -137,7 +138,6 @@ public class Home {
 
     // 메모 수정하기 (구현) (새로만듦)
     public Memo editMemo(int choice) {
-        sc = new Scanner(System.in); //이렇게 해야 입력이됨
         // (1) 글 번호 불러오기
         int maxMemoNo = choice;
         // (2) 이름 입력
